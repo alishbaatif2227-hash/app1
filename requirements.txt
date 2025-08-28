@@ -1,10 +1,5 @@
 Django>=5.0,<6.0
-gunicorn
-whitenoise
-
-
-Django==5.0.6
-sqlparse==0.5.0
-asgiref==3.8.1
-...
+asgiref>=3.8
+sqlparse>=0.5
+tzdata; sys_platform == "win32"
 
