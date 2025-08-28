@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block contect %}
+<div class="form-container">
+    <h2 class="form-title">Update Employee</h2>
+    <form method="POST" action="{% url 'update' employee.id %}" class="employee-form">
+        {% csrf_token %}
+
+        <div class="form-group">
+            <label for="id_eid">Employee ID</label>
+            <input type="text" name="eid" id="id_eid" required value="{{ employee.eid }}">
+        </div>
+
+        <div class="form-group">
+            <label for="id_ename">Name</label>
+            <input type="text" name="ename" id="id_ename" required value="{{ employee.ename }}">
+        </div>
+
+        <div class="form-group">
+            <label for="id_eemail">Email</label>
+            <input type="email" name="eemail" id="id_eemail" required value="{{ employee.eemail }}">
+        </div>
+
+        <div class="form-group">
+            <label for="id_econtact">Contact</label>
+            <input type="text" name="econtact" id="id_econtact" required value="{{ employee.econtact }}">
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn-submit">Update Employee</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

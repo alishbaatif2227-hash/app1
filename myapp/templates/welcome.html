@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block contect %}
+<div class="welcome-container">
+    <div class="welcome-card">
+        <h1>👋 Welcome to Employee Management System</h1>
+        <p class="subtitle">
+            Manage employees efficiently with add, update, and view options.
+        </p>
+        <div class="button-group">
+            <a href="{% url 'load_form' %}" class="btn add-btn">+ Add New Employee</a>
+            <a href="{% url 'show' %}" class="btn show-btn">Show All Employees</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

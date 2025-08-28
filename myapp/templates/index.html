@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block contect %}
+<div class="form-container">
+    <h2 class="form-title">Add New Employee</h2>
+    <form method="POST" action="{% url 'add' %}" class="employee-form">
+        {% csrf_token %}
+
+        <div class="form-group">
+            <label for="id_eid">Employee ID</label>
+            {{ form.eid }}
+        </div>
+
+        <div class="form-group">
+            <label for="id_ename">Name</label>
+            {{ form.ename }}
+        </div>
+
+        <div class="form-group">
+            <label for="id_eemail">Email</label>
+            {{ form.eemail }}
+        </div>
+
+        <div class="form-group">
+            <label for="id_econtact">Contact</label>
+            {{ form.econtact }}
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn-submit">Add Employee</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

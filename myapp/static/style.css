@@ -1,0 +1,397 @@
+/* welcome page */
+/* Full background */
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    background: linear-gradient(135deg, #007bff, #6f42c1, #17a2b8);
+    background-size: 300% 300%;
+    animation: bgAnimation 10s ease infinite;
+    padding: 20px;
+}
+
+/* Animated background */
+@keyframes bgAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Card */
+.welcome-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    max-width: 600px;
+    width: 100%;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Card hover effect */
+.welcome-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Heading */
+.welcome-card h1 {
+    font-size: 2.2rem;
+    color: #343a40;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 14px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Add button */
+.add-btn {
+    background: #28a745;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
+}
+.add-btn:hover {
+    background: #218838;
+    transform: scale(1.05);
+}
+
+/* Show button */
+.show-btn {
+    background: #17a2b8;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(23, 162, 184, 0.3);
+}
+.show-btn:hover {
+    background: #138496;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+/* navbar */
+/* Custom Navbar */
+.custom-navbar {
+    background: linear-gradient(135deg, #343a40, #212529);
+    padding: 12px 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Navbar brand */
+.custom-navbar .navbar-brand {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+.custom-navbar .navbar-brand:hover {
+    color: #ffc107;
+}
+
+/* Navbar links */
+.custom-navbar .nav-link {
+    color: #f8f9fa;
+    margin: 0 8px;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.custom-navbar .nav-link:hover {
+    color: #0d6efd;
+    transform: translateY(-2px);
+}
+
+/* Search form */
+.search-form {
+    position: relative;
+}
+.search-input {
+    border-radius: 20px 0 0 20px;
+    padding: 8px 14px;
+    border: 1px solid #0d6efd;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+.search-input:focus {
+    box-shadow: 0 0 8px rgba(13,110,253,0.6);
+}
+
+/* Search button */
+.search-btn {
+    border-radius: 0 20px 20px 0;
+    background: #0d6efd;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    transition: background 0.3s ease;
+}
+.search-btn:hover {
+    background: #0b5ed7;
+}
+
+
+
+
+
+
+/* index page */
+/* Form Container */
+.form-container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Form Title */
+.form-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+/* Each Field */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+    color: #333;
+}
+
+/* Django Form Fields */
+.form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus Effect */
+.form-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0,123,255,0.4);
+    outline: none;
+}
+
+/* Submit Button */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #28a745;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+    background: #218838;
+}
+
+
+
+
+
+/* show page */
+/* Container */
+.table-container {
+    margin: 40px auto;
+    max-width: 900px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Title */
+.table-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Table */
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.employee-table thead {
+    background: #007bff;
+    color: #fff;
+}
+
+.employee-table th, 
+.employee-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.employee-table tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.employee-table tbody tr:hover {
+    background: #eef6ff;
+    transition: 0.3s;
+}
+
+/* Action Buttons */
+.btn-action {
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 0 3px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+/* Edit */
+.edit-btn {
+    background: #ffc107;
+    color: #fff;
+}
+.edit-btn:hover {
+    background: #e0a800;
+}
+
+/* Delete */
+.delete-btn {
+    background: #dc3545;
+    color: #fff;
+}
+.delete-btn:hover {
+    background: #c82333;
+}
+
+/* Empty State */
+.no-records {
+    text-align: center;
+    font-style: italic;
+    color: #6c757d;
+    padding: 20px;
+}
+
+
+
+
+
+
+/* edit page */
+/* Reusable Form Container */
+.form-container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Title */
+.form-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+/* Form Fields */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus Effect */
+.form-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0,123,255,0.4);
+    outline: none;
+}
+
+/* Submit Button */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+    background: #0056b3;
+}
